@@ -21,7 +21,7 @@
 
 ### Feature List
 
-- [Method Overloading](src/method-overloading/Demo.java)
+- [Method Overloading](core-java/src/main/java/org/example/method-overloading/Demo.java)
 ## Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](contributing.md) first.
