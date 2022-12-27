@@ -1,4 +1,4 @@
-<h1 align="center">Algo Playground</h1>
+<h1 align="center">Java Playground</h1>
 
 <h4 align="center">A place to find all Java features at once</h4>
 
