@@ -2,13 +2,9 @@
 public class MethodOverloading {
 
     /**
-     * There are few ways we can overload a method in Java.
-     *  1. by changing the number of parameters - method 1 and 2
-     *  2. by changing the data type of parameters - method 1 and 3
-     * -----------------------------------------------------------------------
      * Method overloading is achieved by either:
-     *      changing the number of arguments.
-     *      or changing the data type of arguments.
+     *      changing the number of arguments - method 1 and 2
+     *      changing the data type of arguments - method 1 and 3
      * -----------------------------------------------------------------------
      * It is not method overloading if we only change the return type of methods.
      * Also, The same return type is not mandatory. Can be same or different - method 1, 3 and 4
