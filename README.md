@@ -12,16 +12,9 @@
 
 </div>
 
-### How to Use
-
-- Folders are based on the Java features.
-- Every folder have one or more `.java` files and one `README.md` file.
-    - `README.md` file describes the feature that will be demonstrating.
-    - `.java` files contains the code.
-
 ### Feature List
 
-- [Method Overloading](core-java/src/main/java/org/example/method-overloading/Demo.java)
+- [Method Overloading](core-java/src/main/java/MethodOverloading.java)
 ## Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](contributing.md) first.
