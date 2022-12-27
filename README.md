@@ -19,6 +19,8 @@
 - [Lambda Expression With Streams](core-java/src/main/java/lambda/expression/LambdaExpressionWithStreams.java)
 - [Inter Thread Communication](core-java/src/main/java/concurrency/interthread/communication/InterThreadCommunication.java)
 - [Synchronization](core-java/src/main/java/concurrency/synchronization/Synchronization.java)
+- [Deadlock](core-java/src/main/java/concurrency/deadlock/Deadlock.java)
+- [ThreadLocal](core-java/src/main/java/concurrency/thread/local/ThreadLocalDemo.java)
 ## Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](contributing.md) first.
