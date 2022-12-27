@@ -12,9 +12,13 @@
 
 </div>
 
-### Feature List
+### Features List
 
-- [Method Overloading](core-java/src/main/java/MethodOverloading.java)
+- [Method Overloading](core-java/src/main/java/method/overloading/MethodOverloading.java)
+- [Lambda Expression](core-java/src/main/java/lambda/expression/LambdaExpression.java)
+- [Lambda Expression With Streams](core-java/src/main/java/lambda/expression/LambdaExpressionWithStreams.java)
+- [Inter Thread Communication](core-java/src/main/java/concurrency/interthread/communication/InterThreadCommunication.java)
+- [Synchronization](core-java/src/main/java/concurrency/synchronization/Synchronization.java)
 ## Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](contributing.md) first.
