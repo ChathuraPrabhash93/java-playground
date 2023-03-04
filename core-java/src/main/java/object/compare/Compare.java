@@ -39,27 +39,16 @@ public class Compare {
     }
 
     /***
-     * This method demonstrate a Comparator implementation
-     * Here we are compare a custom class
-     *  OUTPUT: [Student{age=12, name='Amal'}, Student{age=38, name='Nimal'}, Student{age=50, name='Ranmal'}, Student{age=69, name='Shamal'}, Student{age=74, name='Kamal'}]
-     *
+     * This method demonstrate a Comparator implementation on a custom class
      * Also we use the lambda implementation rather than anonymous implementation of the class
      * We are overriding the `int compare(T o1, T o2);`
-     * Comparator used to compare objects only by one field
+     * Here we are comparing both name and age and priority given to the name.
+     * Hence, first it will sort by name and then the age
      */
     private static void compareStudentsWithComparator() {
         Comparator<Student> comparator = (o1, o2) -> {
-            if (o1.getAge() == o2.getAge())
-                return 0;
+            int result = o1.getName().compareTo(o2.getName()); // compare names
 
-            if (o1.getAge() > o2.getAge())
-                return 1;
-            else
-                return -1;
-
-            // Below commented code will be sort by both name and age
-
-            /*int result = o1.getName().compareTo(o2.getName()); // compare names
             if (result == 0) { // if names are equal
                 if (o1.getAge() == o2.getAge()) {
                     return 0;
@@ -70,7 +59,7 @@ public class Compare {
                 }
             } else { // if names are not equal, use name comparison result
                 return result;
-            }*/
+            }
         };
 
         List<Student> students = buildStudentList();
@@ -91,7 +80,7 @@ public class Compare {
         System.out.println(men);
     }
 
-    private static List<Student> buildStudentList(){
+    private static List<Student> buildStudentList() {
         Student one = new Student(12, "Amal");
         Student two = new Student(38, "Nimal");
         Student three = new Student(74, "Kamal");
