@@ -1,53 +1,33 @@
 package concurrency.deadlock;
 
+import java.util.TreeMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Deadlock {
-    public static Object Lock1 = new Object();
-    public static Object Lock2 = new Object();
 
-    public static void main(String args[]) {
-        ThreadDemo1 T1 = new ThreadDemo1();
-        ThreadDemo2 T2 = new ThreadDemo2();
-        T1.start();
-        T2.start();
+
+    static class ABC {
+        // instance variable of the class ABC
+        int x = 30;
     }
 
-    private static class ThreadDemo1 extends Thread {
+    public static void main(String argvs[])
+    {
+        // creating an object of the class ABC
+        ABC obj1 = new ABC();
 
-        public void run() {
+        // it will copy the reference, not value
+        ABC obj2 = new ABC();
 
-            synchronized (Lock1) {
-                System.out.println("Thread 1: Holding lock 1...");
+        // updating the value to 6
+        // using the reference variable obj2
+        obj2.x = 6;
 
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                }
-                System.out.println("Thread 1: Waiting for lock 2...");
-
-                synchronized (Lock2) {
-                    System.out.println("Thread 1: Holding lock 1 & 2...");
-                }
-            }
-        }
-    }
-
-    private static class ThreadDemo2 extends Thread {
-
-        public void run() {
-
-            synchronized (Lock2) {
-                System.out.println("Thread 2: Holding lock 2...");
-
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                }
-                System.out.println("Thread 2: Waiting for lock 1...");
-
-                synchronized (Lock1) {
-                    System.out.println("Thread 2: Holding lock 2 & 1...");
-                }
-            }
-        }
+        // printing the value of x using reference variable obj1
+        System.out.println("The value of x is: " + obj1.x);
     }
 }
+
+
+

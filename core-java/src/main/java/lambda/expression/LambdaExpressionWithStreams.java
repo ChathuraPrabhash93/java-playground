@@ -8,7 +8,7 @@ public class LambdaExpressionWithStreams {
     static List<String> places = new ArrayList<>();
 
     // preparing our data
-    public static List getPlaces(){
+    public static List<String> getPlaces(){
 
         // add places and country to the list
         places.add("Nepal, Kathmandu");
