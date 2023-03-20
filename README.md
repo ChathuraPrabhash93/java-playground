@@ -20,7 +20,12 @@
 - [Synchronization](core-java/src/main/java/concurrency/synchronization/Synchronization.java)
 - [Deadlock](core-java/src/main/java/concurrency/deadlock/Deadlock.java)
 - [ThreadLocal](core-java/src/main/java/concurrency/thread/local/ThreadLocalDemo.java)
-## Contribute
+
+### Useful Links
+
+- [Java Built-in Functional Interfaces List](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
+
+### Contribute
 
 Contributions are always welcome! Please read the [contribution guidelines](contributing.md) first.
 
