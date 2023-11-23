@@ -20,6 +20,7 @@
 - [Synchronization](core-java/src/main/java/concurrency/synchronization/Synchronization.java)
 - [Deadlock](core-java/src/main/java/concurrency/deadlock/Deadlock.java)
 - [ThreadLocal](core-java/src/main/java/concurrency/thread/local/ThreadLocalDemo.java)
+- [Immutable Class](core-java/src/main/java/immutable/ImmutableExample.java)
 
 ### Useful Links
 
