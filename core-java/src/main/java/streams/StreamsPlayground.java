@@ -34,7 +34,8 @@ public class StreamsPlayground {
     /**
      * Example for find anything matching for the given criteria
      */
-    private static void anyMatchExample() {Product p1 = new Product("Books", 101.00);
+    private static void anyMatchExample() {
+        Product p1 = new Product("Books", 101.00);
         Product p2 = new Product("Pens", 15.00);
         Product p3 = new Product("Books", 230.00);
 
